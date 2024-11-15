@@ -187,13 +187,77 @@ function DetailsScreen() {
             }}
           />
         </View>
-        <View style={{backgroundColor:'black',opacity:0.8,width:350,height:150,alignSelf:'center',marginTop:40,borderRadius:20}}>
-          <Text style={{color:'#fff',marginLeft:20,marginTop:10}}>Your Last Order</Text>
-          <Text style={{color:'#fff', marginLeft:20,marginTop:10}}>Large Hand tossed Pizza Create Your Own With{"\n"}BBQ Sauce, 6 Chkn Wings,450 cal/slice </Text> 
-          <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-              <Text style={{color:'#fff',marginTop:40,marginLeft:20}}>See All</Text>
-              <Text style={{color:'red',marginTop:40,marginRight:20,fontWeight:'bold'}}>View Order</Text>
+        <View
+          style={{
+            backgroundColor: "black",
+            opacity: 0.8,
+            width: 350,
+            height: 150,
+            alignSelf: "center",
+            marginTop: 40,
+            borderRadius: 20,
+          }}
+        >
+          <Text style={{ color: "#fff", marginLeft: 20, marginTop: 10 }}>
+            Your Last Order
+          </Text>
+          <Text style={{ color: "#fff", marginLeft: 20, marginTop: 10 }}>
+            Large Hand tossed Pizza Create Your Own With{"\n"}BBQ Sauce, 6 Chkn
+            Wings,450 cal/slice{" "}
+          </Text>
+          <View
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
+            <Text style={{ color: "#fff", marginTop: 40, marginLeft: 20 }}>
+              See All
+            </Text>
+            <Text
+              style={{
+                color: "red",
+                marginTop: 40,
+                marginRight: 20,
+                fontWeight: "bold",
+              }}
+            >
+              View Order
+            </Text>
           </View>
+        </View>
+        <View
+          style={{
+            height: 200,
+            width: 350,
+            backgroundColor: "black",
+            opacity: 0.5,
+            marginTop: 20,
+            borderRadius: 10,
+            marginLeft: 30,
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <Text
+            style={{
+              color: "#fff",
+              fontWeight: "bold",
+              fontSize: 15,
+              marginTop: 70,
+              marginLeft: 5,
+            }}
+          >
+            CLASSIC MINT PEPPERONI {"\n"}
+            <Text style={{ color: "red", fontSize: 15 }}>
+              Only For $7.99
+            </Text>{" "}
+          </Text>
+          <Image
+            style={{ width: 150, height: 150, marginTop: 20, marginRight: 30 }}
+            source={require("./assets/mush.png")}
+          ></Image>
+        </View>
+        <View style={{width:350,height:200, backgroundColor:'#000',opacity:0.5,marginTop:20,marginLeft:30,borderRadius:10,flexDirection:'row',justifyContent:'space-between'}}>
+          <Text style={{color:'#fff',}}>Veggie Pizza</Text>
+
 
         </View>
       </ScrollView>
