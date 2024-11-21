@@ -223,7 +223,7 @@ function DetailsScreen() {
             </Text>
           </View>
         </View>
-        <View
+        <TouchableOpacity
           style={{
             height: 200,
             width: 350,
@@ -242,24 +242,25 @@ function DetailsScreen() {
               fontWeight: "bold",
               fontSize: 15,
               marginTop: 70,
-              marginLeft: 5,
+              marginLeft: 15,
             }}
           >
-            CLASSIC MINT PEPPERONI {"\n"}
+             MINT PEPPERONI {"\n"}
             <Text style={{ color: "red", fontSize: 15 }}>
               Only For $7.99
             </Text>{" "}
           </Text>
           <Image
-            style={{ width: 150, height: 150, marginTop: 20, marginRight: 30 }}
+            style={{ width: 150, height: 150, marginTop: 20, marginRight: 10 }}
             source={require("./assets/mush.png")}
           ></Image>
-        </View>
-        <View style={{width:350,height:200, backgroundColor:'#000',opacity:0.5,marginTop:20,marginLeft:30,borderRadius:10,flexDirection:'row',justifyContent:'space-between'}}>
-          <Text style={{color:'#fff',}}>Veggie Pizza</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={{width:350,height:200, backgroundColor:'#000',opacity:0.5,marginTop:20,marginLeft:30,borderRadius:10,flexDirection:'row',justifyContent:'space-between'}}>
+        <Image style={{width:180,height:180,marginTop:0}} source={require('./assets/veggie.png')}></Image>
+          <Text style={{color:'#fff',marginTop:60,marginRight:10,fontWeight:'bold',fontSize:20}}>Veggie Pizza{"\n"}<Text style={{color:'red',fontSize:15}}>For Only $3.99</Text></Text>
 
 
-        </View>
+        </TouchableOpacity>
       </ScrollView>
     </ImageBackground>
   );
